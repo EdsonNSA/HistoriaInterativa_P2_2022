@@ -1,0 +1,163 @@
+CAPITULO
+ID
+Raiz
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista 
+acorda no meio da noite, ao olhar para a porta do seu quarto, ela ver algo avermelhado entre a porta e a parede, 
+algo que definitivamente nao estava la mais cedo, paralisada de medo e deitada em sua cama, ela observa aquela coisa, 
+tentando distingui-la em meio a escuridao. Apos alguns minutos em silencio, aquilo comeca a enpurrar vagarosamente a porta, 
+produzindo um rangido ensurdecedor.
+VARIACOES
+-20
+0
+
+CAPITULO_COM_IMAGEM
+ID
+Capitulo001
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+O barulho para, com certeza a algo parado bem na sua frente, nao tem como fugir.
+VARIACOES
+-80
+100
+IMAGEM
+                                        
+              ▒▒          ▒▒            
+        ▒▒▒▒▒▒██          ██▒▒▒▒▒▒      
+      ▒▒████████          ████████▒▒    
+    ▒▒██████████▒▒      ▒▒██████████▒▒  
+    ▒▒████    ████      ████    ████▒▒  
+    ▒▒████▓▓▓▓██    ▒▒  ░░██▓▓▓▓████▒▒  
+        ██████    ▒▒██▒▒    ██████      
+    ▒▒            ██████            ▒▒  
+  ▒▒██▒▒▒▒        ██  ██        ▒▒▒▒██▒▒
+    ▒▒████▒▒                  ▒▒████▒▒  
+      ▒▒████▓▓      ▓▓      ██████▒▒    
+      ▒▒██████  ██  ██  ██  ██████▒▒    
+      ▒▒██████████████████████████▒▒    
+        ▒▒████  ██  ██  ██  ████▒▒      
+          ▒▒██  ▒▒  ▒▒  ▒▒  ██▒▒        
+            ██              ██          
+            ▒▒              ▒▒          
+IMAGEM_FIM
+
+CAPITULO
+ID
+Capitulo002
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+O seu coracao dispara, ao juntar toda a coragem que lhe restava, ela vai em direcao a 
+Protagonista
+ quem e voce?? ela pergunta, um forte sentimento de angustia toma o seu corpo.
+VARIACOES
+-10
++20
+
+CAPITULO_COM_IMAGEM
+ID
+Capitulo003
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Empurrando a porta, ela ver algo que jamais poderia imaginar, 
+uma figura distorcida que nao e possivel descrever, o quarto fica em um tom avermelhado, 
+Protagonista
+, dominada pelo medo ao ver AQUILO, ela percebe que nao resta nada a ser feito.
+VARIACOES
+-70
++80
+IMAGEM
+                                        
+              ▒▒          ▒▒            
+        ▒▒▒▒▒▒██          ██▒▒▒▒▒▒      
+      ▒▒████████          ████████▒▒    
+    ▒▒██████████▒▒      ▒▒██████████▒▒  
+    ▒▒████    ████      ████    ████▒▒  
+    ▒▒████▓▓▓▓██    ▒▒  ░░██▓▓▓▓████▒▒  
+        ██████    ▒▒██▒▒    ██████      
+    ▒▒            ██████            ▒▒  
+  ▒▒██▒▒▒▒        ██  ██        ▒▒▒▒██▒▒
+    ▒▒████▒▒                  ▒▒████▒▒  
+      ▒▒████▓▓      ▓▓      ██████▒▒    
+      ▒▒██████  ██  ██  ██  ██████▒▒    
+      ▒▒██████████████████████████▒▒    
+        ▒▒████  ██  ██  ██  ████▒▒      
+          ▒▒██  ▒▒  ▒▒  ▒▒  ██▒▒        
+            ██              ██          
+            ▒▒              ▒▒          
+IMAGEM_FIM
+
+CAPITULO
+ID
+Capitulo004
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Ao sair, a porta se fecha bruscamente atras dela, a mantendo afastada pelo resto da noite, 
+ao amanhecer, ela finalmente decide entrar no seu quarto, dentro nada parecia ter mudado, 
+se algo esteve ali, ja nao aparentava esta mais. Sem entender direito oque tinha acontecido, 
+e tendo certeza que qualquer um diria que foi so a sua imaginacao, ela entao decide viver com 
+essa lembranca desagradavel que a atormentara sempre antes de dormir.
+VARIACOES
+-10
+-170
+
+ESCOLHA
+DE
+Raiz
+PARA
+Capitulo001
+TEXTO DIGITADO
+cobrir
+TEXTO MOSTRADO
+Se [cobrir]
+
+ESCOLHA
+DE
+Raiz
+PARA
+Capitulo002
+TEXTO DIGITADO
+Enfrentar
+TEXTO MOSTRADO
+[Enfrentar] a criatura
+
+ESCOLHA
+DE
+Capitulo002
+PARA
+Capitulo003
+TEXTO DIGITADO
+Empurrar
+TEXTO MOSTRADO
+[Empurrar] a porta
+
+ESCOLHA
+DE
+Capitulo002
+PARA
+Capitulo004
+TEXTO DIGITADO
+Fugir
+TEXTO MOSTRADO
+[Fugir] do quarto
+
+ESCOLHA
+DE
+Capitulo001
+PARA
+Raiz
+TEXTO DIGITADO
+Recomecar
+TEXTO MOSTRADO
+[Recomecar] a historia
+

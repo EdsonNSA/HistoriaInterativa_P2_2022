@@ -1,7 +1,4 @@
-## Getting Started
+## História Interativa
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste projeto temos um código que permite a narração de história com escolhas.
 
-## Folder Structure
-
-The workspace contains tw
