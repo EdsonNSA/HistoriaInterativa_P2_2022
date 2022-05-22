@@ -1,22 +1,24 @@
-import java.util.Map;
-import java.util.Scanner;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class App {
+public class App extends Application{
 
-    public static void main(String[] args) {
-        LeitorDeArquivos leitor = new LeitorDeArquivos();
-        Scanner escaneador = new Scanner(System.in, "UTF-8");
-
-        Map<String, Personagem> personagens = leitor.carregarPersonagens("Personagens.txt");
-        Map<String, Capitulo> capitulos = leitor.carregarCapitulos("Capitulos.txt", personagens, escaneador);
-
-        System.out.println("Carregamento finalizado\n\n...\n\n");
-        
-        Capitulo raiz = capitulos.get("Raiz");
-        raiz.executar();
-
-        escaneador.close();
-
+    public static void main(String[] args) 
+    {
+        launch(args);
     }
 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LABEL.fxml"));
+        Parent root = loader.load();
+        Scene tela = new Scene(root);
+
+        primaryStage.setTitle("História Interativa");
+        primaryStage.setScene(tela);
+        primaryStage.show();
+    }
 }

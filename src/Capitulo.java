@@ -9,7 +9,7 @@ public class Capitulo {
   private Personagem personagem2;
   private int variacaoEnergiaPersonagem1;
   private int variacaoEnergiaPersonagem2;
-  protected Scanner escaneador;
+  
 
   protected Capitulo() {
     this.texto = "";
@@ -17,24 +17,27 @@ public class Capitulo {
   }
 
   public Capitulo(String texto, Personagem personagem1, Personagem personagem2, int variacaoEnergiaPersonagem1,
-      int variacaoEnergiaPersonagem2, Scanner escaneador) {
+      int variacaoEnergiaPersonagem2) {
     this.texto = texto;
     this.personagem1 = personagem1;
     this.personagem2 = personagem2;
     this.variacaoEnergiaPersonagem1 = variacaoEnergiaPersonagem1;
     this.variacaoEnergiaPersonagem2 = variacaoEnergiaPersonagem2;
-    this.escaneador = escaneador;
     this.escolhas = new ArrayList<Escolha>();
 
   }
 
-  public Capitulo(Map<String, Personagem> personagens, Scanner escaneadorDoConsole, Scanner escaneadorDeArquivo) 
+  public Capitulo(Map<String, Personagem> personagens, Scanner escaneadorDeArquivo) 
   {
     this.LerCapitulo(personagens, escaneadorDeArquivo);
-    this.escaneador = escaneadorDoConsole;
     this.escolhas = new ArrayList<Escolha>();
   }
 
+  public String getTexto()
+  {
+    return this.texto;
+  }
+  
   protected void LerCapitulo(Map<String, Personagem> personagens, Scanner escaneadorDeArquivo) {
 
     escaneadorDeArquivo.nextLine();
@@ -101,8 +104,8 @@ protected void mostrar() {
     boolean escolhaValida = false;
 
     while (!escolhaValida) {
-
-      escolha = escaneador.nextLine();
+      //escolha = escaneador.nextLine();
+      escolha = "";
       for (int i = 0; i < escolhas.size(); i++) {
         if (escolha.equalsIgnoreCase(escolhas.get(i).getTextoDigitado())) {
           escolhaValida = true;
@@ -117,6 +120,10 @@ protected void mostrar() {
     }
 
     return opcaoEscolhida;
+  }
+
+  public ArrayList<Escolha> getEscolhas() {
+    return escolhas;
   }
 
 }

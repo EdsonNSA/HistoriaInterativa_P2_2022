@@ -7,11 +7,9 @@ public class CapituloImagem extends Capitulo {
 
     public CapituloImagem(
             Map<String, Personagem> personagens,
-            Scanner escaneadorDoConsole,
             Scanner escaneadorDeArquivo) {
         super();
         this.lerCapitulo(personagens, escaneadorDeArquivo);
-        this.escaneador = escaneadorDoConsole;
         this.escolhas = new ArrayList<Escolha>();
     }
 
