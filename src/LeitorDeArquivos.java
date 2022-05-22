@@ -36,7 +36,8 @@ public class LeitorDeArquivos {
 
   }
 
-  public HashMap<String, Capitulo> carregarCapitulos(String caminho, Map<String, Personagem> personagens) {
+  public HashMap<String, Capitulo> carregarCapitulos(
+    String caminho, Map<String, Personagem> personagens) {
 
     HashMap<String, Capitulo> capitulos = new HashMap<String, Capitulo>();
 
@@ -54,12 +55,9 @@ public class LeitorDeArquivos {
           escaneadorDeArquivo.nextLine();
           String id = escaneadorDeArquivo.nextLine();
 
-          if (linha.equals("CAPITULO")) 
-          {
+          if (linha.equals("CAPITULO")) {
             capitulos.put(id, new Capitulo(personagens, escaneadorDeArquivo));
-          } 
-          else if (linha.equals("CAPITULO_COM_IMAGEM")) 
-          {
+          } else if (linha.equals("CAPITULO_COM_IMAGEM")) {
             capitulos.put(id, new CapituloImagem(personagens, escaneadorDeArquivo));
           }
 
@@ -81,7 +79,9 @@ public class LeitorDeArquivos {
 
   }
 
-  private void LerEscolha(HashMap<String, Capitulo> capitulos, Scanner escaneadorDeArquivo) {
+  private void LerEscolha(
+    HashMap<String, Capitulo> capitulos,
+     Scanner escaneadorDeArquivo) {
 
     escaneadorDeArquivo.nextLine();
     String idCapituloDe = escaneadorDeArquivo.nextLine();
@@ -93,7 +93,7 @@ public class LeitorDeArquivos {
     String textoMostrado = escaneadorDeArquivo.nextLine();
 
     capitulos.get(idCapituloDe)
-        .adicionarEscolha(new Escolha(textoDigitado, textoMostrado, capitulos.get(idCapituloPara)));
+      .adicionarEscolha(new Escolha(textoDigitado, textoMostrado, capitulos.get(idCapituloPara)));
 
   }
 

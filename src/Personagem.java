@@ -7,11 +7,11 @@ public class Personagem {
 
     this.nome = nome;
     this.energia = energia;
-    }
+  }
 
-    public Personagem(String nome) {
-      this.nome = nome;
-      this.energia = 100;
+  public Personagem(String nome) {
+    this.nome = nome;
+    this.energia = 100;
 
   }
 
@@ -26,7 +26,7 @@ public class Personagem {
   public void setEnergia(int energia) {
     this.energia = energia;
     if (this.energia < 0) {
-       this.energia = 0;
+      this.energia = 0;
     }
 
   }
@@ -38,11 +38,5 @@ public class Personagem {
   public String getNome() {
     return this.nome;
   }
-  
 
-  
-
-
-
-  
-}  
+}

@@ -16,7 +16,8 @@ public class Capitulo {
     this.escolhas = new ArrayList<Escolha>();
   }
 
-  public Capitulo(String texto, Personagem personagem1, Personagem personagem2, int variacaoEnergiaPersonagem1,
+  public Capitulo(String texto, Personagem personagem1,
+   Personagem personagem2, int variacaoEnergiaPersonagem1,
       int variacaoEnergiaPersonagem2) {
     this.texto = texto;
     this.personagem1 = personagem1;
@@ -27,7 +28,9 @@ public class Capitulo {
 
   }
 
-  public Capitulo(Map<String, Personagem> personagens, Scanner escaneadorDeArquivo) 
+  public Capitulo(
+    Map<String, Personagem> personagens,
+     Scanner escaneadorDeArquivo) 
   {
     this.LerCapitulo(personagens, escaneadorDeArquivo);
     this.escolhas = new ArrayList<Escolha>();
@@ -38,7 +41,9 @@ public class Capitulo {
     return this.texto;
   }
   
-  protected void LerCapitulo(Map<String, Personagem> personagens, Scanner escaneadorDeArquivo) {
+  protected void LerCapitulo(
+    Map<String, Personagem> personagens,
+     Scanner escaneadorDeArquivo) {
 
     escaneadorDeArquivo.nextLine();
     String idPersonagem1 = escaneadorDeArquivo.nextLine();
