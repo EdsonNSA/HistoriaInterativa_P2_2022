@@ -66,8 +66,10 @@ public class Capitulo {
       linha = escaneadorDeArquivo.nextLine();
 
     }
-    this.variacaoEnergiaPersonagem1 = Integer.parseInt(escaneadorDeArquivo.nextLine());
-    this.variacaoEnergiaPersonagem2 = Integer.parseInt(escaneadorDeArquivo.nextLine());
+    this.variacaoEnergiaPersonagem1 =
+     Integer.parseInt(escaneadorDeArquivo.nextLine());
+    this.variacaoEnergiaPersonagem2 =
+     Integer.parseInt(escaneadorDeArquivo.nextLine());
 
   }
 

@@ -28,8 +28,10 @@ private Capitulo raiz;
   @FXML
   void iniciarhistoria(ActionEvent event) {
     LeitorDeArquivos leitor = new LeitorDeArquivos();
-    Map<String, Personagem> personagens = leitor.carregarPersonagens("Personagens.txt");
-    Map<String, Capitulo> capitulos = leitor.carregarCapitulos("Capitulos.txt", personagens);
+    Map<String, Personagem> personagens =
+     leitor.carregarPersonagens("Personagens.txt");
+    Map<String, Capitulo> capitulos =
+     leitor.carregarCapitulos("Capitulos.txt", personagens);
 
     System.out.println("Carregamento finalizado\n\n...\n\n");
 

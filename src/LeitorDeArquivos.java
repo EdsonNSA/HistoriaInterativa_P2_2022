@@ -93,7 +93,8 @@ public class LeitorDeArquivos {
     String textoMostrado = escaneadorDeArquivo.nextLine();
 
     capitulos.get(idCapituloDe)
-      .adicionarEscolha(new Escolha(textoDigitado, textoMostrado, capitulos.get(idCapituloPara)));
+      .adicionarEscolha(new Escolha(textoDigitado,
+       textoMostrado, capitulos.get(idCapituloPara)));
 
   }
 
