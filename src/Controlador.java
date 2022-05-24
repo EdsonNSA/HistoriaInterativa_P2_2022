@@ -9,9 +9,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.TextArea;
 
+/**
+ * A classe Controlador comanda as funções do programa  Java,
+ * onde o codigo será exibido.
+ */
 public class Controlador {
 
 private Capitulo raiz;
+
+  @FXML
+  private TextArea Energia;
 
   @FXML
   private Button botaoIniciar;
@@ -55,6 +62,7 @@ private Capitulo raiz;
 
   public void mostrarImagemAscii(String imagem) {
     imagemAscii.setText(imagem);
+    
   }
 
   public void mostrarEscolhas(ArrayList<Escolha> escolhas)

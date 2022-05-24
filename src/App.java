@@ -4,6 +4,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * A classe App é responsavel por executar o codígo através do LABEL.fxml
+ */
+
 public class App extends Application{
 
   public static void main(String[] args) 

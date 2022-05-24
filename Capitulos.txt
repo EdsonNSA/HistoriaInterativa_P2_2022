@@ -5,8 +5,8 @@ PERSONAGENS
 Protagonista
 Antagonista
 TEXTO
-Protagonista 
-acorda no meio da noite, ao olhar para a porta do seu quarto, ela ver algo avermelhado entre a porta e a parede, 
+Protagonista
+ acorda no meio da noite, ao olhar para a porta do seu quarto, ela ver algo avermelhado entre a porta e a parede, 
 algo que definitivamente nao estava la mais cedo, paralisada de medo e deitada em sua cama, ela observa aquela coisa, 
 tentando distingui-la em meio a escuridao. Apos alguns minutos em silencio, aquilo comeca a enpurrar vagarosamente a porta, 
 produzindo um rangido ensurdecedor.

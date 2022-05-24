@@ -2,6 +2,19 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Classe que armazena todaas as informaççoes relativas
+ * a um capitulo. As informações são:
+ * <ul>
+ * <li> private String texto;
+ * <li> protected ArrayList<Escolha> escolha;
+ * <li> private Personagens personagem1;
+ * <li> private Personagens personagem2;
+ * <li> private int variacaoEnergiapersonagem1;
+ * <li> private int variacaoEnergiapersonagem2;
+ * </ul>
+ */
+
 public class Capitulo {
   private String texto;
   protected ArrayList<Escolha> escolhas;
@@ -10,12 +23,21 @@ public class Capitulo {
   private int variacaoEnergiaPersonagem1;
   private int variacaoEnergiaPersonagem2;
   
-
+/**
+ * mostrar escolhas.
+ */
   protected Capitulo() {
     this.texto = "";
     this.escolhas = new ArrayList<Escolha>();
   }
-
+/**
+ * imformações do codigo.
+ * @param texto
+ * @param personagem1
+ * @param personagem2
+ * @param variacaoEnergiaPersonagem1
+ * @param variacaoEnergiaPersonagem2
+ */
   public Capitulo(String texto, Personagem personagem1,
    Personagem personagem2, int variacaoEnergiaPersonagem1,
       int variacaoEnergiaPersonagem2) {
@@ -40,7 +62,12 @@ public class Capitulo {
   {
     return this.texto;
   }
-  
+  /**
+   * o LerCapitulo ira tanto dar nome como gerencicar as variações
+   * de energia que os personagens sofrem.
+   * @param personagens
+   * @param escaneadorDeArquivo
+   */
   protected void LerCapitulo(
     Map<String, Personagem> personagens,
      Scanner escaneadorDeArquivo) {

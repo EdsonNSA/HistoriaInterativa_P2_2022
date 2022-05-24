@@ -1,3 +1,8 @@
+/**
+ * A classe Personagem é responsavel por dar nome e
+ * gerenciar a energia do protagonista e do antagonista.
+ */
+
 public class Personagem {
 
   private String nome;
@@ -14,7 +19,10 @@ public class Personagem {
     this.energia = 100;
 
   }
-
+/**
+ * Aqui é ajustada a energia do protagonista e do antagonista.
+ * @param variacao
+ */
   public void ajustarEnergia(int variacao) {
     if (variacao != 0) {
       setEnergia(this.energia + variacao);

@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * A classe LeitorDeArquivo vai processar as imformações 
+ * das imagens, escolhas e capitulos do codigo.
+ */
+
 public class LeitorDeArquivos {
   public HashMap<String, Personagem> carregarPersonagens(String caminho) {
     HashMap<String, Personagem> personagens = new HashMap<String, Personagem>();
