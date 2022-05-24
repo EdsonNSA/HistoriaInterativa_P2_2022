@@ -44,7 +44,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="47.0" layoutY="41.0" style="&#10;" text="História ..." textAlignment="CENTER">
+        <Label alignment="CENTER" layoutX="47.0" layoutY="41.0" style="&#10;" text="História: Entidade" textAlignment="CENTER">
           <font>
             <Font name="System Bold" size="25.0" />
           </font>

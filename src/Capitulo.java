@@ -76,59 +76,13 @@ public class Capitulo {
 
   }
 
-  public void executar() {
-    mostrar();
-
-    if (escolhas.size() > 0) {
-        int idCapituloEscolhido = escolher();
-        System.out.println();
-        System.out.println(". . .");
-        System.out.println();
-        escolhas.get(idCapituloEscolhido).getProximo().executar();
-    } else {
-        System.out.println("FIM");
-    }
-}
-
-protected void mostrar() {
-    System.out.println(texto);
-    personagem1.ajustarEnergia(variacaoEnergiaPersonagem1);
-    personagem2.ajustarEnergia(variacaoEnergiaPersonagem2);
-
-    for (int i = 0; i < escolhas.size(); i++) {
-        System.out.println("- " + escolhas.get(i).getTextoMostrado());
-    }
-
-    System.out.print(">> ");
-}
-
-  public int escolher() {
-
-    int opcaoEscolhida = 0;
-    String escolha;
-    boolean escolhaValida = false;
-
-    while (!escolhaValida) {
-      //escolha = escaneador.nextLine();
-      escolha = "";
-      for (int i = 0; i < escolhas.size(); i++) {
-        if (escolha.equalsIgnoreCase(escolhas.get(i).getTextoDigitado())) {
-          escolhaValida = true;
-          opcaoEscolhida = i;
-        }
-      }
-
-      if (!escolhaValida) {
-
-        System.out.println("Escolha inválida");
-      }
-    }
-
-    return opcaoEscolhida;
-  }
-
   public ArrayList<Escolha> getEscolhas() {
     return escolhas;
   }
 
+  public void atualizarEnergiaPersonagens() {
+    personagem1.ajustarEnergia(variacaoEnergiaPersonagem1);
+    personagem2.ajustarEnergia(variacaoEnergiaPersonagem2);
+  }
+  
 }

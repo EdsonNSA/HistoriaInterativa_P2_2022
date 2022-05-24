@@ -13,26 +13,17 @@ public class CapituloImagem extends Capitulo {
     this.escolhas = new ArrayList<Escolha>();
   }
 
-protected void lerCapitulo(
-  Map<String, Personagem> personagens,
-   Scanner escaneadorDeArquivo) {
-  super.LerCapitulo(personagens, escaneadorDeArquivo);
+  protected void lerCapitulo(
+    Map<String, Personagem> personagens,
+    Scanner escaneadorDeArquivo) {
+    super.LerCapitulo(personagens, escaneadorDeArquivo);
 
-  escaneadorDeArquivo.nextLine();
-  String linha = escaneadorDeArquivo.nextLine();
-  this.imagem = "";
-  while (!linha.equals("IMAGEM_FIM")) {
-    this.imagem = imagem + "\n" + linha ;
-    linha = escaneadorDeArquivo.nextLine();
-  }
-}
-
-protected void mostrar() {
-
-  System.out.println();
-  System.out.println("---");
-  System.out.println(this.imagem);
-  super.mostrar();
-
+    escaneadorDeArquivo.nextLine();
+    String linha = escaneadorDeArquivo.nextLine();
+    this.imagem = "";
+    while (!linha.equals("IMAGEM_FIM")) {
+      this.imagem = imagem + "\n" + linha ;
+      linha = escaneadorDeArquivo.nextLine();
+    }
   }
 }

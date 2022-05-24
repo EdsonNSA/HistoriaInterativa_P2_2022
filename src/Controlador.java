@@ -38,11 +38,11 @@ private Capitulo raiz;
 
     botaoIniciar.setVisible(false);
 
-    // raiz.executar();
-
   }
 
-  private void mostrarCapitulo(Capitulo capitulo) {
+  private void mostrarCapitulo(Capitulo capitulo) 
+  {
+    capitulo.atualizarEnergiaPersonagens();
     mostrarTextoCapitulo(capitulo.getTexto());
     mostrarEscolhas(capitulo.getEscolhas());
   }
